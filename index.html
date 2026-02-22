@@ -3,67 +3,92 @@ layout: default
 title: Home
 ---
 
-<div class="grid">
+<!-- ================= CATEGORY GRID ================= -->
+<div class="grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px; padding:20px;">
 
-<div class="card">
-<h2>Hollywood Updates</h2>
-<p>Trending Hollywood movies and celebrity updates.</p>
+  <div class="card">
+    <h2>Hollywood Updates</h2>
+    <p>Trending Hollywood movies and celebrity updates.</p>
+  </div>
+
+  <div class="card">
+    <h2>Bollywood Updates</h2>
+    <p>Latest Bollywood news and box office collection.</p>
+  </div>
+
+  <div class="card">
+    <h2>Upcoming & Incomplete Movies</h2>
+    <p>Upcoming and delayed movie reports.</p>
+  </div>
+
 </div>
 
-<div class="card">
-<h2>Bollywood Updates</h2>
-<p>Latest Bollywood news and box office collection.</p>
-</div>
-
-<div class="card">
-<h2>Incomplete Movies</h2>
-<p>Upcoming and delayed movie reports.</p>
-</div>
-
-<!-- AUTO SLIDING ARTICLES -->
+<!-- ================= BREAKING NEWS TICKER ================= -->
 <div style="background:black; color:white; padding:8px; overflow:hidden;">
-<marquee behavior="scroll" direction="left" scrollamount="5">
-<h2>Latest Posts</h2>
-{% for post in site.posts limit:10 %}
-🔥 <a href="{{ post.url }}" style="color:yellow; text-decoration:none;">
-{{ post.title }}
-</a> &nbsp;&nbsp;&nbsp;&nbsp;
-{% endfor %}
-
-</marquee>
-</div>
-</section>
-
-  <!--Latest Posts-->
-          <!-- AUTO POST GRID START -->
-<div style="padding:20px;">
-
-{% for post in site.posts %}
-
-<div style="background:white; padding:15px; margin-bottom:15px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
-
-<h3>
-<a href="{{ post.url }}" style="text-decoration:none; color:black;">
-{{ post.title }}
-</a>
-</h3>
-
-<p style="font-size:14px; color:gray;">
-{{ post.date | date: "%d %B %Y" }}
-</p>
-
-<p>
-{{ post.excerpt | strip_html | truncate: 150 }}
-</p>
-
-<a href="{{ post.url }}" style="color:red; font-weight:bold;">
-Read More →
-</a>
-
+  <marquee behavior="scroll" direction="left" scrollamount="5">
+    {% for post in site.posts limit:10 %}
+      🔥 <a href="{{ post.url }}" style="color:yellow; text-decoration:none;">
+      {{ post.title }}
+      </a> &nbsp;&nbsp;&nbsp;&nbsp;
+    {% endfor %}
+  </marquee>
 </div>
 
-{% endfor %}
+<!-- ================= LATEST POSTS GRID ================= -->
+<div style="padding:30px;">
+
+  <h2 style="margin-bottom:20px;">Latest Articles</h2>
+
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:20px;">
+
+    {% for post in site.posts %}
+
+    <div style="background:white; padding:20px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+
+      <h3>
+        <a href="{{ post.url }}" style="text-decoration:none; color:black;">
+          {{ post.title }}
+        </a>
+      </h3>
+
+      <p style="font-size:13px; color:gray;">
+        {{ post.date | date: "%d %B %Y" }}
+      </p>
+
+      <p>
+        {{ post.excerpt | strip_html | truncate: 140 }}
+      </p>
+
+      <a href="{{ post.url }}" style="color:red; font-weight:bold;">
+        Read More →
+      </a>
+
+    </div>
+
+    {% endfor %}
+
+  </div>
 
 </div>
-<!-- AUTO POST GRID END -->
-<footer style="background:black; color:white; padding:40px 20px; text-align:center; margin-top:40px;">
+
+<!-- ================= FOOTER ================= -->
+<footer style="background:black; color:white; padding:40px 20px; text-align:center; margin-top:50px;">
+
+  <h2 style="margin-bottom:20px;">Follow UK TV Global</h2>
+
+  <div style="line-height:30px; margin-bottom:20px;">
+    <a href="#" style="color:#00aced; text-decoration:none;">Facebook - UK TV</a><br>
+    <a href="#" style="color:#00aced; text-decoration:none;">Facebook - Salman Khan Fans</a><br>
+    <a href="#" style="color:#ff0000; text-decoration:none;">YouTube - FactPunc</a><br>
+    <a href="#" style="color:#e1306c; text-decoration:none;">Instagram - UK TV</a><br>
+    <a href="#" style="color:#1877f2; text-decoration:none;">Official Facebook - Mohd Hasim</a><br>
+    <a href="#" style="color:#e1306c; text-decoration:none;">Official Instagram</a>
+  </div>
+
+  <hr style="border:1px solid #333; width:80%; margin:20px auto;">
+
+  <p style="font-size:14px;">
+    © 2026 UK TV Global | All Rights Reserved
+  </p>
+
+</footer>
