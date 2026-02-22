@@ -74,3 +74,35 @@ title: Home
   </p>
 </section>
 </div>
+<h2>Latest Posts</h2>
+<!-- AUTO POST GRID START -->
+<div style="padding:20px;">
+
+{% for post in site.posts %}
+
+<div style="background:white; padding:15px; margin-bottom:15px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+
+<h3>
+<a href="{{ post.url }}" style="text-decoration:none; color:black;">
+{{ post.title }}
+</a>
+</h3>
+
+<p style="font-size:14px; color:gray;">
+{{ post.date | date: "%d %B %Y" }}
+</p>
+
+<p>
+{{ post.excerpt | strip_html | truncate: 150 }}
+</p>
+
+<a href="{{ post.url }}" style="color:red; font-weight:bold;">
+Read More →
+</a>
+
+</div>
+
+{% endfor %}
+
+</div>
+<!-- AUTO POST GRID END -->
