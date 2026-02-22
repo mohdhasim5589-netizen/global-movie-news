@@ -73,7 +73,15 @@ padding:15px;
 
 <div class="card">
 <h2>Latest Movie News</h2>
+<h2>Latest Posts</h2>
 
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
 <p>Daily updates on Hollywood & Bollywood box office collections and celebrity news.</p>
 
 <p>
