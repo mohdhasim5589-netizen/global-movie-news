@@ -1,0 +1,18 @@
+header {
+    background: url('banner.jpg') no-repeat center center;
+    background-size: cover;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    position: relative;
+}
+
+.site-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFD700;
+    text-shadow: 2px 2px 10px black;
+    margin: 0;
+    letter-spacing: 2px;
+}
