@@ -6,21 +6,6 @@ title: Home
 <div class="grid">
 
 <div class="card">
-<h2>Henry Cavill</h2>
-<p>Latest news and updates about Henry Cavill.</p>
-</div>
-
-<div class="card">
-<h2>Salman Khan</h2>
-<p>Latest Salman Khan movie updates and box office news.</p>
-</div>
-
-<div class="card">
-<h2>Shah Rukh Khan</h2>
-<p>Latest SRK news and upcoming projects.</p>
-</div>
-
-<div class="card">
 <h2>Hollywood Updates</h2>
 <p>Trending Hollywood movies and celebrity updates.</p>
 </div>
@@ -36,24 +21,29 @@ title: Home
 </div>
 <h2>Latest Posts</h2>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <small>{{ post.date | date: "%d %B %Y" }}</small>
-    </li>
-  {% endfor %}
-</ul>
-<div class="card">
-<h2>Earning & Sponsors</h2>
-<p>Affiliate products and sponsor links will appear here.</p>
+<!-- AUTO SLIDING ARTICLES -->
+<div style="background:black; color:white; padding:8px; overflow:hidden;">
+<marquee behavior="scroll" direction="left" scrollamount="5">
+
+{% for post in site.posts limit:10 %}
+🔥 <a href="{{ post.url }}" style="color:yellow; text-decoration:none;">
+{{ post.title }}
+</a> &nbsp;&nbsp;&nbsp;&nbsp;
+{% endfor %}
+
+</marquee>
 </div>
-<!-- ================= SEARCH BAR ================= -->
-<div style="text-align:center; margin:30px 0;">
-  <form action="#" method="get">
-    <input type="text" placeholder="Search articles..." style="padding:10px; width:60%; max-width:400px; border-radius:5px; border:1px solid #ccc;">
-    <button type="submit" style="padding:10px 15px; background:#000; color:white; border:none; border-radius:5px;">Search</button>
-  </form>
+
+<!-- SMALL SEARCH BELOW BREAKING -->
+<div style="text-align:center; padding:10px; background:#f4f4f4;">
+<form action="/search.html" method="get">
+<input type="text" name="q" placeholder="Search articles..."
+style="padding:6px; width:250px; border:1px solid #ccc; border-radius:3px;">
+<button type="submit"
+style="padding:6px 12px; background:black; color:white; border:none; border-radius:3px;">
+Search
+</button>
+</form>
 </div>
 
 
@@ -131,7 +121,7 @@ title: Home
     For brand promotion or publishing your article, contact us at:
   </p>
 
-  <p><strong>Email:</strong> your@email.com</p>
+  <p><strong>Email:</strong> mohdhasimdcp@gmail.com</p>
 
   <p style="font-size:13px; color:#ccc;">
     All sponsored content must comply with our editorial and advertising guidelines.
