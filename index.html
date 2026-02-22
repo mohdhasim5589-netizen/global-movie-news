@@ -34,7 +34,16 @@ title: Home
 <h2>Incomplete Movies</h2>
 <p>Upcoming and delayed movie reports.</p>
 </div>
+<h2>Latest Posts</h2>
 
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <small>{{ post.date | date: "%d %B %Y" }}</small>
+    </li>
+  {% endfor %}
+</ul>
 <div class="card">
 <h2>Earning & Sponsors</h2>
 <p>Affiliate products and sponsor links will appear here.</p>
