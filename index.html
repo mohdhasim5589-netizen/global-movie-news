@@ -1,14 +1,112 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{{ page.title }}</title>
 
-<h2>Latest Posts</h2>
+<style>
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#f2f2f2;
+}
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+nav{
+  background:#111;
+  padding:12px;
+  text-align:center;
+}
+
+nav a{
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.banner{
+  background:url('/banner.jpg') no-repeat center;
+  background-size:cover;
+  height:220px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.banner h1{
+  color:gold;
+  font-size:45px;
+  text-shadow:2px 2px 6px black;
+}
+
+.breaking{
+  background:red;
+  color:white;
+  padding:8px;
+  text-align:center;
+  font-weight:bold;
+}
+
+.container{
+  padding:20px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  margin-bottom:20px;
+  box-shadow:0 0 8px rgba(0,0,0,0.1);
+}
+
+footer{
+  background:black;
+  color:white;
+  text-align:center;
+  padding:30px 20px;
+}
+
+footer a{
+  color:white;
+  display:block;
+  margin:6px 0;
+  text-decoration:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="/">Home</a>
+<a href="/about.html">About</a>
+<a href="/contact.html">Contact</a>
+<a href="/privacy-policy.html">Privacy Policy</a>
+</nav>
+
+<div class="banner">
+<h1>UK TV Global</h1>
+</div>
+
+<div class="breaking">
+Breaking News: Latest Hollywood & Bollywood Updates
+</div>
+
+<div class="container">
+{{ content }}
+</div>
+
+<footer>
+<h3>Follow Us</h3>
+<a href="#">Facebook - UK TV</a>
+<a href="#">Facebook - Salman Khan Fans</a>
+<a href="#">YouTube - FactPunc</a>
+<a href="#">Instagram - UK TV Update</a>
+<a href="#">Official Facebook - Mohd Hasim</a>
+<a href="#">Official Instagram</a>
+<br>
+© 2026 UK TV Global | All Rights Reserved
+</footer>
+
+</body>
+</html>
