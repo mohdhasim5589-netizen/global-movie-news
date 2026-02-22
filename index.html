@@ -19,12 +19,11 @@ title: Home
 <h2>Incomplete Movies</h2>
 <p>Upcoming and delayed movie reports.</p>
 </div>
-<h2>Latest Posts</h2>
 
 <!-- AUTO SLIDING ARTICLES -->
 <div style="background:black; color:white; padding:8px; overflow:hidden;">
 <marquee behavior="scroll" direction="left" scrollamount="5">
-
+<h2>Latest Posts</h2>
 {% for post in site.posts limit:10 %}
 🔥 <a href="{{ post.url }}" style="color:yellow; text-decoration:none;">
 {{ post.title }}
