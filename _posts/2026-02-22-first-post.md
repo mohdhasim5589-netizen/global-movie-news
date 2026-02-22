@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: post
+title: Salman Khan New Movie 2026 Update
 ---
 
-<div class="card">
-<h1>{{ page.title }}</h1>
-<p><small>{{ page.date | date: "%B %d, %Y" }}</small></p>
+Salman Khan ki upcoming movie 2026 me release hogi.
 
-{{ content }}
-</div>
+Yeh ek action packed movie hai.
+
+Full cast aur trailer update jald aayega.
