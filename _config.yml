@@ -2,3 +2,4 @@ title: UK TV Global
 url: "https://uktvglobal.in"
 baseurl: ""
 theme: minima
+permalink: /:title/
