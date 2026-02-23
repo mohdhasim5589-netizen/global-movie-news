@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
+
+  <!-- Dynamic Title -->
+  <title>{% if page.title %}{{ page.title }} | UK TV Global{% else %}UK TV Global{% endif %}</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO Plugin -->
   {% seo %}
+
+  <!-- Discover Important -->
   <meta name="robots" content="max-image-preview:large">
+
+  <!-- Dynamic Description -->
+  <meta name="description" content="{{ page.description | default: site.description }}">
+
+  <!-- Open Graph (Facebook / WhatsApp Preview) -->
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  {% if page.image %}
+  <meta property="og:image" content="{{ page.image | absolute_url }}">
+  {% endif %}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  {% if page.image %}
+  <meta name="twitter:image" content="{{ page.image | absolute_url }}">
+  {% endif %}
 
   <style>
 
@@ -122,5 +148,8 @@ Breaking News: Latest Hollywood & Bollywood Updates • Henry Cavill New Project
 <a href="https://www.instagram.com/__its.me_hasim" target="_blank">Official Instagram</a>
 </p>
 
-<p>© 2026 UK TV Global | All Rights Reserved</p>
+<p>©️ 2026 UK TV Global | All Rights Reserved</p>
 </footer>
+
+</body>
+</html>
