@@ -1,17 +1,10 @@
 title: UK TV Global
-description: Latest Hollywood & Bollywood News, Celebrity Updates, Box Office Reports & Upcoming Movie Leaks
+description: Latest Hollywood & Bollywood News, Celebrity Updates & Box Office Reports
 url: https://uktvglobal.in
 baseurl: ""
 
 permalink: /:year/:month/:day/:title/
 
-timezone: Asia/Kolkata
-
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
-
-markdown: kramdown
-
-kramdown:
-  input: GFM
