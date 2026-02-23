@@ -71,3 +71,9 @@ Henry Cavill ka safar ek sadharan bachpan se global superstardom tak ki kahani h
 Unki lagan, discipline aur dedication unhe Hollywood ke sabse prabhavshali actors mein shamil karti hai.
 
 Unka safar abhi jari hai — aur fans unke agle project ka intezar kar rahe hain.
+Marvel ne recently Avengers 5 ka naam officially change kar diya hai.
+Puri detail yaha padhe:
+
+<a href="/2026/02/23/avengers-doomsday/">
+Avengers 5 Officially Retitled – What It Means for MCU
+</a>
