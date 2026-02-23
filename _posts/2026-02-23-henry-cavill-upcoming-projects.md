@@ -33,3 +33,9 @@ After massive success in fantasy roles, Cavill is rumored to be considering anot
 - Box office appeal  
 
 Stay tuned for more updates only on **UK TV Global**.
+Marvel ne recently Avengers 5 ka naam officially change kar diya hai.
+Puri detail yaha padhe:
+
+<a href="/2026/02/23/avengers-doomsday/">
+Avengers 5 Officially Retitled – What It Means for MCU
+</a>
