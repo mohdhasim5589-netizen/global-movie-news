@@ -50,3 +50,9 @@ Market experts predict that 2026 could deliver balanced box office performance, 
 Bollywood’s 2026 lineup reflects strategic planning and audience-focused cinema. Official announcements are expected throughout 2025 as production schedules finalize.
 
 Disclosure: This article provides industry analysis based on available reports.2
+Marvel ne recently Avengers 5 ka naam officially change kar diya hai.
+Puri detail yaha padhe:
+
+<a href="/2026/02/23/avengers-doomsday/">
+Avengers 5 Officially Retitled – What It Means for MCU
+</a>
